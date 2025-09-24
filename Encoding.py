@@ -31,6 +31,8 @@ def decode():
     for i in set1:
         if i == ' ':
             x3.append(" ")
+        elif i not in alphabet:
+            x3.append(i)
         else:
             x = int(alphabet.index(i))
             x1 = x - shift
